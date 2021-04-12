@@ -9,9 +9,28 @@
 </head>
 <body>
     <h1 class="text-danger">Library</h1>
-    <div class= "form-div">
+    <div class= "form-div container">
         <p>This is a library that allows you to add a book and specify whether you have read it or not.</p>
-        <button>Add New book</button>
+        <button id="add-book" class="btn btn-primary">Add New book</button>
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputTitle" class="form-label">Book's Title</label>
+                <input type="text" class="form-control" id="exampleInputTitle">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputAuthor" class="form-label">Book's Author</label>
+                <input type="text" class="form-control" id="exampleInputAuthor">
+            </div>
+             <div class="mb-3">
+                <label for="exampleInputPages" class="form-label">Number Of Pages</label>
+                <input type="number" class="form-control" id="exampleInputPages">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Read</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Add Book</button>
+        </form>
     </div>
     <div class="books-div"></div>
     <script src="assets/js/bootstrap.min.js"></script>
