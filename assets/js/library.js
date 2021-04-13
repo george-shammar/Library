@@ -47,7 +47,7 @@ function displayBook() {
     document.querySelector("#book-container").innerHTML = ""; 
     myLibrary.forEach(book => { 
         let bookDiv = document.createElement('div');
-
+        bookDiv.setAttribute('class', 'card');
         let titleparagraph = document.createElement('p');
         let titleText = document.createTextNode(book.title);
         titleparagraph.appendChild(titleText);
