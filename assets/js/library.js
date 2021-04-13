@@ -25,9 +25,6 @@ function addBookToLibrary() {
     myLibrary.push(newBook);
 };
 
-// newBook = new Book('The Hermit', 'George Gbenle', 345, true);
-// addBookToLibrary(newBook);
-
 // display book on browser
 
 let displayBook = () => {
