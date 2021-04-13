@@ -20,6 +20,29 @@ let myLibrary = [];
 
 // Add new book to Library array
 
-function addBookToLibrary(newBook) {
-    myLibrary.push(newBook);
-}
+function addBookToLibrary(book) {
+    myLibrary.push(book);
+};
+
+newBook = new Book('The Hermit', 'George Gbenle', 345, true);
+addBookToLibrary(newBook);
+
+// display book on browser
+
+let displayBook = book => {
+    myLibrary.forEach(function(book) {
+        let bookTitle = document.querySelector('.title');
+        bookTitle.textContent = `${book.title}`;
+
+        let bookAuthor = document.querySelector('.author');
+        bookAuthor.textContent = `${book.author}`;
+
+        let bookPages = document.querySelector('.pages') 
+        bookPages.textContent = `${book.pages}`;
+
+        let bookRead = document.querySelector('.read')
+        bookRead.textContent = `${book.read}`;
+    });
+};
+
+console.log(displayBook(newBook));
