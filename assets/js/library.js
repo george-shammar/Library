@@ -20,12 +20,13 @@ let myLibrary = [];
 
 // Add new book to Library array
 
-function addBookToLibrary(book) {
-    myLibrary.push(book);
+function addBookToLibrary() {
+    newBook = new Book(title, author, pages, read);
+    myLibrary.push(newBook);
 };
 
-newBook = new Book('The Hermit', 'George Gbenle', 345, true);
-addBookToLibrary(newBook);
+// newBook = new Book('The Hermit', 'George Gbenle', 345, true);
+// addBookToLibrary(newBook);
 
 // display book on browser
 
