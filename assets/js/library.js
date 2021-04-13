@@ -25,6 +25,10 @@ function addBookToLibrary() {
     myLibrary.push(newBook);
 };
 
+// Connect browser form
+let formSubmit = document.querySelector('.submit');
+formSubmit.addEventListener("click", addBookToLibrary);
+
 // display book on browser
 
 let displayBook = () => {
