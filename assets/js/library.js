@@ -29,7 +29,7 @@ addBookToLibrary(newBook);
 
 // display book on browser
 
-let displayBook = book => {
+let displayBook = () => {
     myLibrary.forEach(function(book) {
         let bookTitle = document.querySelector('.title');
         bookTitle.textContent = `${book.title}`;
@@ -45,4 +45,4 @@ let displayBook = book => {
     });
 };
 
-console.log(displayBook(newBook));
+displayBook();
