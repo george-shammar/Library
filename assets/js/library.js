@@ -21,30 +21,22 @@ let myLibrary = [];
 // Add new book to Library array
 
 function addBookToLibrary() {
-    newBook = new Book(title, author, pages, read);
+    let bookTitle = document.querySelector('.title').value;
+
+    let bookAuthor = document.querySelector('.author').value;
+
+    let bookPages = document.querySelector('.pages').value;
+
+    let bookRead = document.querySelector('.read').value;
+    let newBook = new Book(title, author, pages, read);
     myLibrary.push(newBook);
 };
 
 // Connect browser form
 let formSubmit = document.querySelector('.submit');
 formSubmit.addEventListener("click", addBookToLibrary);
+// formSubmit.addEventListener("click", function(e) {
+//     e.preventDefault();
 
 // display book on browser
 
-let displayBook = () => {
-    myLibrary.forEach(function(book) {
-        let bookTitle = document.querySelector('.title');
-        bookTitle.textContent = `${book.title}`;
-
-        let bookAuthor = document.querySelector('.author');
-        bookAuthor.textContent = `${book.author}`;
-
-        let bookPages = document.querySelector('.pages') 
-        bookPages.textContent = `${book.pages}`;
-
-        let bookRead = document.querySelector('.read')
-        bookRead.textContent = `${book.read}`;
-    });
-};
-
-displayBook();
