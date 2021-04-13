@@ -38,33 +38,15 @@ function addBookToLibrary() {
 let formSubmit = document.querySelector('.submit');
 formSubmit.addEventListener("click", addBookToLibrary);
 
-// create new card on browser
 
-
-// const displayBooks = () => {
-//     myLibrary.forEach((book) => {
-//       const bookDiv = document.createElement('DIV');
-//       bookDiv.setAttribute('data-index', idx);
-  
-//       let info = document.createTextNode(book.info());
-  
-//       const deleteBtn = document.createElement('BUTTON');
-//       deleteBtn.appendChild(document.createTextNode('DELETE BOOK'));
-  
-//       const readBtn = document.createElement('BUTTON');
-//       readBtn.appendChild(document.createTextNode('TOGGLE READ'));
-  
-//       bookDiv.appendChild(info);
-//       bookDiv.appendChild(document.createElement('BR'));
-//       bookDiv.appendChild(readBtn)
-//       bookDiv.appendChild(deleteBtn);
-  
-//       displayBooksDiv.appendChild(bookDiv);
-  
-//       deleteBtn.addEventListener('click', () => library.splice(idx, 1));
-//       readBtn.addEventListener('click', () => library[idx].read === 'true' ? library[idx].read = 'false' : library[idx].read = 'true');
-//     });
-//   };
 
 // display book on browser
 
+function displayBook() {
+    myLibrary.forEach(book => { 
+        let bookDiv = document.createElement('div');
+        
+    }); 
+
+
+};
