@@ -13,53 +13,31 @@
     <div class= "form-div container">
         <p>This is a library that allows you to add a book and specify whether you have read it or not.</p>
         <button id="add-book" class="btn btn-primary">Add New book</button>
-        <form class="form">
+        <div class="form">
             <div class="mb-3">
                 <label for="exampleInputTitle" class="form-label">Book's Title</label>
-                <input type="text" class="form-control" id="exampleInputTitle">
+                <input type="text" class="form-control title" id="exampleInputTitle">
             </div>
             <div class="mb-3">
                 <label for="exampleInputAuthor" class="form-label">Book's Author</label>
-                <input type="text" class="form-control" id="exampleInputAuthor">
+                <input type="text" class="form-control author" id="exampleInputAuthor">
             </div>
              <div class="mb-3">
                 <label for="exampleInputPages" class="form-label">Number Of Pages</label>
-                <input type="number" class="form-control" id="exampleInputPages">
+                <input type="number" class="form-control pages" id="exampleInputPages">
             </div>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Read</label>
+                <label class="form-check-label read" for="exampleCheck1">Read</label>
             </div>
-            <button type="submit" class="btn btn-primary submit">Add Book</button>
-        </form>
+            <button class="btn btn-primary submit">Add Book</button>
+        </div>
     </div>
     <div class="books-div">
 
-        <div class="container">
+        <div id="book-container" class="container">
             
         </div>
-
-
-
-
-
-
-
-
-
-
-        <!-- <div>
-            <p>Title</p>
-            <div class='title'></div><br>
-            <p>Author</p>
-            <div class='author'></div><br>
-            <p>Number of pages</p>
-            <div class='pages'></div><br>
-            <p>Read</p>
-            <div class='read'></div><br>
-            <button>Delete</button>
-            <button>Read:</button>
-        </div> -->
     </div>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/library.js"></script>
