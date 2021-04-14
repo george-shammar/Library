@@ -1,6 +1,7 @@
 let bookForm = document.querySelector('.form');
 let addNewBook = document.querySelector('#add-book');
 let submit = document.querySelector('.submit');
+let deleteBtn = document.getElementsByClassName('btn-danger')
 
 // Event listener for clicking Add new book button to dsipaly form.
 addNewBook.onclick = function () {
@@ -13,11 +14,11 @@ submit.onclick = function () {
 
 // Book object constructor
 function Book(title, author, pages, read=false) {
-    this.title = title
-    this.author = author
-    this.pages = pages
-    this.read = read
-};
+    this.title = title;
+    this.author = author;
+    this.pages = pages;
+    this.read = read;
+}
 
 // Library array
 
@@ -44,8 +45,10 @@ formSubmit.addEventListener("click", addBookToLibrary);
 // display book on browser
 
 function displayBook() {
-    document.querySelector("#book-container").innerHTML = ""; 
+    document.querySelector("#book-container").innerHTML = "";
+    let i = 0 
     myLibrary.forEach(book => { 
+
         let bookDiv = document.createElement('div');
         bookDiv.setAttribute('class', 'card');
         let titleparagraph = document.createElement('p');
@@ -66,8 +69,15 @@ function displayBook() {
 
         let deleteButton = document.createElement('button');
         deleteButton.setAttribute('class', 'btn btn-danger');
-       let deleteBook = document.createTextNode('Delete Book');
-       deleteButton.appendChild(deleteBook);
+        let deleteBook = document.createTextNode('Delete Book');
+        deleteButton.id = i;
+
+        deleteButton.addEventListener('click', function(){
+            myLibrary.splice(this.id, 1);
+            displayBook();
+        });
+
+        deleteButton.appendChild(deleteBook);
 
 
         bookDiv.appendChild(titleparagraph);
@@ -78,6 +88,8 @@ function displayBook() {
 
         let bookContainer = document.getElementById('book-container');
         bookContainer.appendChild(bookDiv);
+
+        ++i;
         
     }); 
 
