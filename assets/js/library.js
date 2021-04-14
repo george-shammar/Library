@@ -89,8 +89,8 @@ function displayBook() {
         bookDiv.appendChild(authorparagraph);
         bookDiv.appendChild(pageparagraph);
         bookDiv.appendChild(readparagraph);
-        bookDiv.appendChild(deleteButton);
         bookDiv.appendChild(readButton);
+        bookDiv.appendChild(deleteButton);
 
         let bookContainer = document.getElementById('book-container');
         bookContainer.appendChild(bookDiv);
