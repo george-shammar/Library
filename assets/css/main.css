@@ -7,3 +7,13 @@
     margin-right: 5px;
     padding: 5px;
 }
+
+.body {
+    background-image: url('/assets/images/inaki-del-olmo-NIJuEQw0RKg-unsplash.jpg');
+    background-size: cover;
+}
+
+.bkg-white {
+    color: white;
+    text-align: center;
+}
