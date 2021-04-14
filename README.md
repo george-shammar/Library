@@ -9,6 +9,10 @@
 > The book can also be deleted while the read status could be changed through the cick of a button.
 - This is basically for educational purposes to better understand the object constructor concept of Javascript.
 
+
+## Main Page
+![screenshot](assets/images/screenLibrary.png)
+
 ## Built With
 > Javascript.
 
