@@ -90,6 +90,7 @@ function displayBook() {
         bookDiv.appendChild(pageparagraph);
         bookDiv.appendChild(readparagraph);
         bookDiv.appendChild(deleteButton);
+        bookDiv.appendChild(readButton);
 
         let bookContainer = document.getElementById('book-container');
         bookContainer.appendChild(bookDiv);
