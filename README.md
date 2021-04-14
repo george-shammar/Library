@@ -28,7 +28,8 @@ git clone URL/SSH key
 
 ## Usage
 - Click the "Add New Book" button and enter the book's information you wish to add.
-- 
+- Changed the read status by clicking the "Read" button.
+- Click the delete button to remove the book.
 
 
 
@@ -40,3 +41,25 @@ git clone URL/SSH key
 - GitHub: [george-shammar](https://github.com/george-shammar)
 - Twitter: [@GeorgeShammar](https://twitter.com/GeorgeShammar)
 - LinkedIn: [George Gbenle](https://www.linkedin.com/in/georgegbenle/)
+ 
+👤 **Widzmarc Jean Nesly Phelle**
+- Instagram: [widzthedvloper] (https://www.instagram.com/widzthedvloper/)
+- LInkedin: [widzthedvloper] (https://www.linkedin.com/in/widzmarc-jean-nesly-phelle-252a26129/)
+- Github: [widzthedvloper] (https://github.com/widzthedvloper)
+
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome!
+
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+
+## 📝 License
+
+This project is [MIT](LICENSE) licensed.
+
+## Acknowledgments
