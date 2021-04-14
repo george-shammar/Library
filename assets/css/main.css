@@ -13,7 +13,6 @@
     background-size: cover;
 }
 
-.bkg-white {
-    color: white;
-    text-align: center;
+.card {
+    min-width: 100px;
 }

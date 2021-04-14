@@ -2,12 +2,11 @@ const bookForm = document.querySelector('.form');
 const addNewBook = document.querySelector('#add-book');
 const submit = document.querySelector('.submit');
 
-// Event listener for clicking Add new book button to dsiplay form.
-addNewBook.onclick = function () {
+addNewBook.onclick = () => {
   bookForm.style.display = 'block';
 };
 
-submit.onclick = function () {
+submit.onclick = () => {
   bookForm.style.display = 'none';
 };
 
@@ -53,7 +52,7 @@ function displayBook() {
     const deleteBook = document.createTextNode('Delete Book');
     deleteButton.id = i;
 
-    deleteButton.addEventListener('click', function () {
+    deleteButton.addEventListener('click', () => {
       myLibrary.splice(this.id, 1);
       displayBook();
     });
@@ -66,7 +65,7 @@ function displayBook() {
     readButton.appendChild(readBook);
 
     readButton.id = i;
-    readButton.addEventListener('click', function () {
+    readButton.addEventListener('click', function readMe() {
       const status = myLibrary[this.id].read;
 
       if (status === 'Yes') {
