@@ -31,7 +31,7 @@ function addBookToLibrary() {
     let bookTitle = document.querySelector('.title').value;
     let bookAuthor = document.querySelector('.author').value;
     let bookPages = document.querySelector('.pages').value;
-    let bookRead = document.querySelector('.read').value;
+    let bookRead = document.querySelector('.form-check-input').value;
 
 
 
@@ -86,6 +86,19 @@ function displayBook() {
         readButton.setAttribute('class', 'btn btn-primary');
         let readBook = document.createTextNode('Read');
         readButton.appendChild(readBook);
+        
+        readButton.id = i;
+        readButton.addEventListener('click', function(){
+            let status = myLibrary[this.id].read;
+
+            if(status === 'Yes'){
+                 myLibrary[this.id].read = 'No'; 
+            }else{
+                 myLibrary[this.id].read = 'Yes';
+            }
+
+            displayBook();
+        });        
 
 
         bookDiv.appendChild(titleparagraph);
