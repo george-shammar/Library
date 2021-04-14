@@ -64,10 +64,17 @@ function displayBook() {
         let readText = document.createTextNode(book.read);
         readparagraph.appendChild(readText);
 
+        let deleteButton = document.createElement('button');
+        deleteButton.setAttribute('class', 'btn btn-danger');
+       let deleteBook = document.createTextNode('Delete Book');
+       deleteButton.appendChild(deleteBook);
+
+
         bookDiv.appendChild(titleparagraph);
         bookDiv.appendChild(authorparagraph);
         bookDiv.appendChild(pageparagraph);
         bookDiv.appendChild(readparagraph);
+        bookDiv.appendChild(deleteButton);
 
         let bookContainer = document.getElementById('book-container');
         bookContainer.appendChild(bookDiv);
