@@ -43,9 +43,9 @@ git clone URL/SSH key
 - LinkedIn: [George Gbenle](https://www.linkedin.com/in/georgegbenle/)
  
 👤 **Widzmarc Jean Nesly Phelle**
-- Instagram: [widzthedvloper] (https://www.instagram.com/widzthedvloper/)
-- LInkedin: [widzthedvloper] (https://www.linkedin.com/in/widzmarc-jean-nesly-phelle-252a26129/)
-- Github: [widzthedvloper] (https://github.com/widzthedvloper)
+- Instagram: [widzthedvloper](https://www.instagram.com/widzthedvloper/)
+- LInkedin: [widzthedvloper](https://www.linkedin.com/in/widzmarc-jean-nesly-phelle-252a26129/)
+- Github: [widzthedvloper](https://github.com/widzthedvloper)
 
 
 ## 🤝 Contributing
