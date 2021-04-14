@@ -52,19 +52,19 @@ function displayBook() {
         let bookDiv = document.createElement('div');
         bookDiv.setAttribute('class', 'card');
         let titleparagraph = document.createElement('p');
-        let titleText = document.createTextNode(book.title);
+        let titleText = document.createTextNode(`Title: ${book.title}`);
         titleparagraph.appendChild(titleText);
         
         let authorparagraph = document.createElement('p');
-        let authorText = document.createTextNode(book.author);
+        let authorText = document.createTextNode(`Author: ${book.author}`);
         authorparagraph.appendChild(authorText);
 
         let pageparagraph = document.createElement('p');
-        let pageText = document.createTextNode(book.pages);
+        let pageText = document.createTextNode(`Pages: ${book.pages}`);
         pageparagraph.appendChild(pageText);
 
         let readparagraph = document.createElement('p');
-        let readText = document.createTextNode(book.read);
+        let readText = document.createTextNode(`Read: ${book.read}`);
         readparagraph.appendChild(readText);
 
         let deleteButton = document.createElement('button');
@@ -78,6 +78,11 @@ function displayBook() {
         });
 
         deleteButton.appendChild(deleteBook);
+
+        let readButton = document.createElement('button');
+        readButton.setAttribute('class', 'btn btn-primary');
+        let readBook = document.createTextNode('Read');
+        readButton.appendChild(readBook);
 
 
         bookDiv.appendChild(titleparagraph);
