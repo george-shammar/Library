@@ -1,7 +1,8 @@
 let bookForm = document.querySelector('.form');
 let addNewBook = document.querySelector('#add-book');
 let submit = document.querySelector('.submit');
-let deleteBtn = document.getElementsByClassName('btn-danger')
+let deleteBtn = document.getElementsByClassName('btn-danger');
+let inputCheck = document.getElementById('exampleCheck1');
 
 // Event listener for clicking Add new book button to dsipaly form.
 addNewBook.onclick = function () {
@@ -13,7 +14,7 @@ submit.onclick = function () {
 };
 
 // Book object constructor
-function Book(title, author, pages, read=false) {
+function Book(title, author, pages, read ) {
     this.title = title;
     this.author = author;
     this.pages = pages;
@@ -31,6 +32,8 @@ function addBookToLibrary() {
     let bookAuthor = document.querySelector('.author').value;
     let bookPages = document.querySelector('.pages').value;
     let bookRead = document.querySelector('.read').value;
+
+
 
     let newBook = new Book(bookTitle, bookAuthor, bookPages, bookRead);
     myLibrary.push(newBook);
