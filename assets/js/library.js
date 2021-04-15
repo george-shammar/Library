@@ -101,10 +101,10 @@ function addBookToLibrary() {
   const paragraph404 = document.getElementsByClassName('bg-danger')[0];
   let bookRead;
 
-  if(document.querySelector('.form-check-input').checked){
-    bookRead ="Yes";
-  }else{
-    bookRead ="No";
+  if (document.querySelector('.form-check-input').checked) {
+    bookRead = 'Yes';
+  } else {
+    bookRead = 'No';
   }
 
   if (bookTitle && bookAuthor && bookPages && bookRead) {
