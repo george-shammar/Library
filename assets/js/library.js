@@ -95,15 +95,26 @@ function displayBook() {
 // Add new book to Library array
 
 function addBookToLibrary() {
+
   const bookTitle = document.querySelector('.title').value;
   const bookAuthor = document.querySelector('.author').value;
   const bookPages = document.querySelector('.pages').value;
   const bookRead = document.querySelector('.form-check-input').value;
 
+  if (bookTitle && bookAuthor && bookPages && bookRead) {
+    const newBook = new Book(bookTitle, bookAuthor, bookPages, bookRead);
+    myLibrary.push(newBook);
+    displayBook();
+  } else {
+    bookForm.style.display = 'block';
+    const errorMessage = document.createElement('p');
+    const errorText = document.createTextNode('Text field cannot be empty. Insert a value.');
+    errorMessage.setAttribute('class', 'text-light bg-danger my-3');
+    errorMessage.appendChild(errorText);
+    bookForm.appendChild(errorMessage)
+  }
+  
 
-  const newBook = new Book(bookTitle, bookAuthor, bookPages, bookRead);
-  myLibrary.push(newBook);
-  displayBook();
 }
 
 // Connect browser form
