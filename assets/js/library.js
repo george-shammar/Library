@@ -53,7 +53,7 @@ function displayBook() {
     deleteButton.id = i;
 
     deleteButton.addEventListener('click', () => {
-      myLibrary.splice(this.id, 1);
+      myLibrary.splice(deleteButton.id, 1);
       displayBook();
     });
 
