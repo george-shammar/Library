@@ -98,9 +98,14 @@ function addBookToLibrary() {
   const bookTitle = document.querySelector('.title').value;
   const bookAuthor = document.querySelector('.author').value;
   const bookPages = document.querySelector('.pages').value;
-  const bookRead = document.querySelector('.form-check-input').value;
   const paragraph404 = document.getElementsByClassName('bg-danger')[0];
+  let bookRead;
 
+  if(document.querySelector('.form-check-input').checked){
+    bookRead ="Yes";
+  }else{
+    bookRead ="No";
+  }
 
   if (bookTitle && bookAuthor && bookPages && bookRead) {
     const newBook = new Book(bookTitle, bookAuthor, bookPages, bookRead);
