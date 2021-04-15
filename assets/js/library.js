@@ -99,11 +99,16 @@ function addBookToLibrary() {
   const bookAuthor = document.querySelector('.author').value;
   const bookPages = document.querySelector('.pages').value;
   const bookRead = document.querySelector('.form-check-input').value;
+  const paragraph404 = document.getElementsByClassName('bg-danger')[0];
+
 
   if (bookTitle && bookAuthor && bookPages && bookRead) {
     const newBook = new Book(bookTitle, bookAuthor, bookPages, bookRead);
     myLibrary.push(newBook);
+
     displayBook();
+
+    bookForm.removeChild(paragraph404);
   } else {
     bookForm.style.display = 'block';
     const errorMessage = document.createElement('p');
