@@ -95,7 +95,6 @@ function displayBook() {
 // Add new book to Library array
 
 function addBookToLibrary() {
-
   const bookTitle = document.querySelector('.title').value;
   const bookAuthor = document.querySelector('.author').value;
   const bookPages = document.querySelector('.pages').value;
@@ -111,10 +110,8 @@ function addBookToLibrary() {
     const errorText = document.createTextNode('Text field cannot be empty. Insert a value.');
     errorMessage.setAttribute('class', 'text-light bg-danger my-3');
     errorMessage.appendChild(errorText);
-    bookForm.appendChild(errorMessage)
+    bookForm.appendChild(errorMessage);
   }
-  
-
 }
 
 // Connect browser form
