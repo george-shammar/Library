@@ -1,0 +1,15 @@
+.form {
+  display: none;
+}
+
+.card {
+  margin-top: 2px;
+  margin-right: 5px;
+  padding: 5px;
+  min-width: 100px;
+}
+
+.body {
+  background-image: url('/assets/images/inaki-del-olmo-NIJuEQw0RKg-unsplash.jpg');
+  background-size: cover;
+}
